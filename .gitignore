@@ -2,3 +2,4 @@ node_modules/
 dist/
 userConfig.json
 .idea
+.parcel-cache

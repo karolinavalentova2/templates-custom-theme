@@ -1,0 +1,15 @@
+export const STATES = {
+    // isAdvantagesRan: false,
+    // cartStep2: true,
+    // cartStep2IsRan: false,
+    // headlineInserted: false,
+    // isUserNavViewOpen: false,
+    // isProductPriceBRun: false,
+    // isBlogRun: false,
+    // isBasketPopUpRan: false,
+    // isBodyRan: false,
+    // isRelatedProductsFetched: false,
+    // isBasketEmpty: false,
+    // isSelectedShippingCartEnabled: false,
+    // isCategoryPerexRan: false,
+}

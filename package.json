@@ -3,6 +3,13 @@
   "version": "0.1.13",
   "author": "Václav Vracovský, https://www.shoptet.cz/",
   "license": "MIT",
+  "scripts": {
+    "build": "parcel build src/js/fv-studio-app-script.js --dist-dir dist/prod --no-source-maps",
+    "build:dev": "parcel build src/js/fv-studio-app-script.js --dist-dir dist/dev --no-source-maps",
+    "build:all:prod": "grunt && npm run build",
+    "build:all:dev": "grunt && npm run build:dev",
+    "build:all": "npm run build:dev && npm run build:all:prod"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:Shoptet/templates-custom-theme.git"
@@ -47,9 +54,17 @@
     },
     "files": {
       "dist/main.css": [
-        "../assets/11/css/main.less",
-        "../assets/11/css/project.less",
-        "../assets/11/css/modules/font-shoptet.less"
+        "../custom/main.less",
+        "../custom/variables.less",
+        "../custom/colors.less",
+        "../custom/header.less",
+        "../custom/category.less",
+        "../custom/product-listing.less",
+        "../custom/detail.less",
+        "../custom/ordering-process.less",
+        "../custom/popups.less",
+        "../custom/index.less",
+        "../custom/footer.less"
       ]
     }
   },
@@ -136,9 +151,11 @@
     }
   },
   "devDependencies": {
+    "eslint": "^8.10.0",
     "grunt": "^1.1.0",
     "grunt-contrib-concat": "^1.0.1",
     "grunt-contrib-less": "^2.0.0",
-    "grunt-contrib-uglify": "^5.0.0"
+    "grunt-contrib-uglify": "^5.0.0",
+    "parcel": "2.3.2"
   }
 }

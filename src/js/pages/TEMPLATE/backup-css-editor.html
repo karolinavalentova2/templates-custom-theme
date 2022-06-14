@@ -1,0 +1,166 @@
+
+<!-- <link href="/user/documents/upload/fv-assets/cookies-pocitarna.css?v=1.0" rel="stylesheet"> -->
+<link href="https://cdn.myshoptet.com/usr/api.fv-studio.cz/user/documents/upload/clients/pocitarna/fv-studio-cookie-lista-style.css?v=3" rel="stylesheet">
+
+
+<link href="https://cdn.jsdelivr.net/gh/czdav3/weeboo/src/weeboo-ui.css" rel="stylesheet">
+<link href="/user/documents/fv_megamenu/fv-studio-app-style.css?v=2.0" rel="stylesheet">
+
+<style>/*změna barvy info proužku*/.site-msg:after {
+    background-color: #00CC00;
+}.site-msg.information
+ .text{color:#000000} font-size: 15px;text-align: center;
+</style>
+
+<style>
+    .p-gift-name a, .p-gift-name a:link {
+        color: #00aba7;
+    }
+    .p-gift-name a:hover {
+        color: #444;
+    }
+</style>
+
+<!--<script type='text/javascript'>
+window.kurz=24.5;
+
+var persooConfig = {
+        apikey: 'vl5abbffib0glks1i8gmd47c',
+        persooName: 'persoo',
+        dataLayerName: 'dataLayer',
+        settings_tolerance: 2000,  // for loading persoo.js
+        personalizations_tolerance: 2500,    // for showing personalizations
+        persooProfileDataCollectionLevel: 'session',
+    };
+
+    /*! Persoo js client 2015-03-16 */
+    var persooLoader=function(a,b,c,d,e){var f=d.persooName,g='_persoo_hide_body';return{hideBody:
+    function(){var b=a.createElement('style'),c='body{opacity:0 !important;filter:alpha(opacity=0)'
+    +' !important;background:none !important;}',d=a.getElementsByTagName('head')[0];b.setAttribute(
+    'id',g),b.setAttribute('type','text/css'),b.styleSheet?b.styleSheet.cssText=c:b.appendChild(
+    a.createTextNode(c)),d.appendChild(b)},finish:function(){if(!c){c=!0;var b=a.getElementById(g);b&&
+    b.parentNode.removeChild(b)}},loadScript:function(b){var c=a.createElement('script');c.src=b,c.type
+    ='text/javascript',c.onerror=function(){persooLoader.finish()},a.getElementsByTagName('head')[0
+    ].appendChild(c)},init:function(){b[f]=b[f]||function(){(b[f].q=b[f].q||[]).push([].slice.call(
+    arguments))},b[f].l=1*new Date,b[f].apikey=d.apikey,b[f].dataLayerName=d.dataLayerName;var c=
+    a.cookie.match('(^|; )'+e+'=([^;]*)'),g=location.search.match('[?&]'+e+'=([^&]*)'),h=g?g[1]:c?c[2]:
+    'p';d.settings_tolerance>0&&(setTimeout(this.finish,d.settings_tolerance),this.hideBody());var i=(
+    d.scriptsHostname||'//scripts.persoo.cz/')+d.apikey+'/'+h;this.loadScript(i+'/actions.js'),
+    this.loadScript(i+'/persoo.js')}}}(document,window,!1,persooConfig,'persooEnvironment');persooLoader.init();
+</script>-->
+
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
+<!-- Foxentry start - predvyplnovani formularu objednavky -->
+<script type="text/javascript">
+
+    var Foxentry;
+    (function () {
+        var e = document.querySelector("script"), s = document.createElement('script');
+        s.setAttribute('type', 'text/javascript');
+        s.setAttribute('async', 'true');
+        s.setAttribute('src', 'https://app.foxentry.cz/lib');
+        e.parentNode.appendChild(s);
+        s.onload = function(){ Foxentry = new FoxentryBase('rMxbbiq4kw'); }
+    })();
+
+    // //CORUX.cz(Ladzo)--akcni produkt s odpoctem na uvodni strance
+    window.odpocetHome={
+        zobrazit:true,//true | false
+        test:false,// pokud true zobrazuje se pouze na ?test  | false ostry provoz!!!
+    };
+    ////CORUX.cz(Ladzo) --akcni produkty v levem sloupci
+    window.akcniProduktyLevySloupec={
+        zobrazit:true,//true | false
+        test:false, // pokud true zobrazuje se pouze na ?test  | false ostry provoz!!!
+    };
+    ////CORUX.cz(Ladzo) --smazani zasilkovny pokud je cena rovna nebo vyssi
+    window.cenaProSmazaniZasilkovny=19799;
+    window.cenaProSmazaniBalikovny=29799;
+
+
+
+    // //CORUX.cz(Ladzo) - navstivene produkty
+    window.navstivene={
+        zobrazit:true,//true | false
+        test:false, // pokud true zobrazuje se pouze na ?test  | false ostry provoz!!!
+    };
+    window.expedice={
+        zobrazit:true,//true | false
+        //datum:'2.7.2018 15:59', // urceno pouze pro testovani
+
+        test:false, // pokud true zobrazuje se pouze na ?test  | false ostry provoz!!!
+
+        cas_expedice:'14:00',
+        statni_svatky:['1.1.','1.5','8.5.','5.7.','6.7.','28.9.','28.10.','17.11.','24.12.','25.12.','26.12.'],
+        velikonocni_pondeli:['22.4.2019','13.4.2020','5.4.2021','18.4.2022','10.4.2023','1.4.2024','21.4.2025','6.4.2026','29.3.2027'],
+    };
+    //CORUX.cz(Ladzo) - antivir v kosiku
+    window.antivirusJakoDarek=false; //true | false
+
+</script>
+
+<meta name="seznam-wmt" content="NURQz8QBihip3EFjsXkUyRFBEcsQJdXb" />
+
+
+<!--CORUX.cz(Ladzo) definice fontu Avenir -->
+<link type="text/css" rel="stylesheet" media="screen" href="/user/documents/upload/_corux/css/font.css?v2" />
+<link type="text/css" rel="stylesheet" media="screen" href="/user/documents/upload/_corux/css/easy-responsive-tabs.css?v1.006" />
+
+<!--Ladzo youtube video -->
+<script type="text/javascript" src="/user/documents/upload/_corux/js/jquery-modal-video.min.js"></script>
+<link type="text/css" rel="stylesheet" media="screen" href="/user/documents/upload/_corux/css/modal-video.min.css" />
+
+
+<!--CORUX.cz(Ladzo) doplnkove sluzby a upgrady -->
+<link type="text/css" rel="stylesheet" media="screen" href="/user/documents/upload/_corux/css/corux.css?v2.000371547" />
+
+
+<!--podpora cookies a práci s časem -->
+<script type="text/javascript" src="/user/documents/upload/_corux/js/js.cookie_js.js"></script>
+<script type="text/javascript" src="/user/documents/upload/_corux/js/js.storage.min_js.js"></script>
+<script type="text/javascript" src="/user/documents/upload/_corux/js/moment.min.js"></script>
+
+<!--Ladzo - polyfill pro práci s url -->
+<!--<script type="text/javascript" src="/user/documents/upload/_corux/js/url-polyfill.min.js"></script>-->
+<!--<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=es2015%2Cblissfuljs%2Cdefault"></script>-->
+<script type="text/javascript" src="https://polyfill.io/v3/polyfill.min.js?features=String.prototype.repeat%2CString.prototype.includes%2Cblissfuljs%2Cdefault"></script>
+
+<!--Ladzo podpora zalozek -->
+<script type="text/javascript" src="/user/documents/upload/_corux/js/easyResponsiveTabs.js"></script>
+
+<!-- Jan Pikla úpravy - start -->
+<link href="/user/documents/janpikla/junx-styles.css?v=1" rel="stylesheet">
+
+<!-- CORUX.cz(Ladzo)  - doplnkove sluzby  - soubor k editaci -->
+<script type="text/javascript" src="/user/documents/upload/_corux/doplnkove_sluzby/sortiment.js?v1.0082"></script>
+
+<!--David Tichý - icon script a styly -->
+<link rel="stylesheet" href="/user/documents/tichy/turtlelab-pocitarna-bs.css?v1.000003">
+<script src="https://kit.fontawesome.com/46014c6cde.js" crossorigin="anonymous"></script>
+
+<link rel="preload" href="/user/documents/upload/_corux/js/corux.min.js?v1.0000206" as="script">
+
+<!-- FV STUDIO APP -->
+<link rel="stylesheet" href="https://cdn.fv-studio.cz/pocitarna/fv-studio-app.css?v1.0000052">
+
+<!-- Smartlook tracking code -->
+<script type='text/javascript'>
+    window.smartlook||(function(d) {
+        var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+        var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+        c.charset='utf-8';c.src='https://rec.smartlook.com/recorder.js';h.appendChild(c);
+    })(document);
+    smartlook('init', '0d3682e5c0b13bb0b5a32c1c8d8a528cb57914d1');
+</script>
+
+<link href="https://turtlelabstudio.cz/data/cdn/dtv_poc/dtv_styles.min.css?v=1.000" rel="stylesheet">
+<script type="text/javascript" src="https://turtlelabstudio.cz/data/cdn/dtv_poc/dtv_pre.min.js?v=1.010"></script>
+<style>
+    #cat-33362{
+        display:none;
+    }
+</style>

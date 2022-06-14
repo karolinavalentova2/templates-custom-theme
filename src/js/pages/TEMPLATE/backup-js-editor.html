@@ -1,0 +1,67 @@
+<script>shoptet.cookie.create('debugTimestamp', 1, {days: 1});</script>
+<script type='text/javascript' src='/user/documents/fv_megamenu/fv-studio-constants-script.js?v=3.1'></script>
+<script type='text/javascript' src='/user/documents/fv_megamenu/fv-studio-app-script.js?v=2.0'></script>
+<!--<script type="text/javascript" src="/user/documents/janpikla/extend.js"></script>-->
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        if ($('.in-krok-1').length && $('.payment-shipping-price:contains("-")').length) {
+            $('.payment-shipping-price:contains("-")').each(function() {
+                $(this).html("SLEVA " + $(this).text().split('-')[1]).parent().attr('style', 'color: #009901');
+            })
+        }
+    })
+</script>
+
+<script type="text/javascript">
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            $('#c-back').addClass('visible');
+        } else {
+            $('#c-back').removeClass('visible');
+        }
+    }
+
+
+    $(document).ready(function(){
+
+//zasilani newsletteru
+        $('#sendNewsletter').attr('checked','checked');
+
+        $("h1:contains('Reference')").addClass("referenceclass");
+        $( '<div id="reference">' ).insertAfter('header h1.referenceclass' );
+        $( "#reference" ).load( "/user/documents/upload/reference/index-slider.html" );
+
+//spipka pro scrolovani
+        $('body').append('<span id="c-back"><svg id="more" viewBox="0 0 12 8" width="100%" height="100%"><path fill="#fff" d="M4.586 6.243L.343 2 1.757.586 6 4.828 10.243.586 11.657 2 6 7.657 4.586 6.243z"></path></svg></span>')
+        $('#c-back').click(function() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        });
+
+
+        window.onscroll = function() {scrollFunction()};
+
+
+    });
+</script>
+
+
+<!--CORUX.cz(Ladzo) uprava paticky a pod-->
+<script type="text/javascript" src="/user/documents/upload/_corux/js/corux.min.js?v1.0000206"></script>
+
+<!-- Skrytí expanded menu -->
+<script>//document.getElementsByClassName('active expandable expanded')[0].childNodes[2].setAttribute('style', 'display:none;');</script>
+
+<!-- Záměna záruk pro VO partnery - DAVID TICHÝ -->
+<script>
+    const customerGroups = [2,6,8];
+    const warrantySetRule = ['Záruka: 2 roky', 'Záruka: 2&nbsp;roky'];
+    var warrantyNewText = 'Záruka: 1 rok';
+    var logDebug = false;
+
+    $.getScript('https://turtlelabstudio.cz/data/cdn/vo_warranty_replace.js');
+</script>
+
+<script type="text/javascript" src="https://turtlelabstudio.cz/data/cdn/dtv_poc/dtv_scripts.min.js?v=1.000"></script>
